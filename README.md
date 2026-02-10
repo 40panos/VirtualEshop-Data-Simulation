@@ -8,7 +8,7 @@
 The database is organized into six main sections: a Customer list for personal details, a Category and Product catalog to organize items (like grouping Laptops under Electronics), and the Order and Order_item records that act as the digital receipt for every sale. To keep everything accurate, a live Inventory_log tracks every stock change—whether an item is sold, returned, or restocked. This connected system ensures that every piece of information is perfectly recorded, providing the reliable data needed to create the final business reports and charts.
 
 
-
+![Database Design](database/EshopRelationalDia.png)
 
 
 ---
@@ -34,6 +34,7 @@ I wrote custom scripts to convert raw data into key business metrics, such as ca
 ## Business Intelligence Dashboard
 The **Power BI Dashboard** is the project's interactive visual layer.It connects directly to the SQL-processed data to track business health through dynamic charts and KPIs
 
+![Database Design](reports/ReportPowerBi.png)
 
 Users can easily filter the entire report by month or year, allowing stakeholders to instantly compare performance trends and seasonal growth[cite: 5, 6].
 
