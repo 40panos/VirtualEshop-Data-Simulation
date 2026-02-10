@@ -32,16 +32,15 @@ I wrote custom scripts to convert raw data into key business metrics, such as ca
 ---
 
 ## Business Intelligence Dashboard
-[cite_start]The **Power BI Dashboard** is the project's interactive visual layer[cite: 5, 6]. [cite_start]It connects directly to the SQL-processed data to track business health through dynamic charts and KPIs[cite: 5, 6].
+The **Power BI Dashboard** is the project's interactive visual layer.It connects directly to the SQL-processed data to track business health through dynamic charts and KPIs
 
 
-
-[cite_start]Users can easily filter the entire report by month or year, allowing stakeholders to instantly compare performance trends and seasonal growth[cite: 5, 6].
+Users can easily filter the entire report by month or year, allowing stakeholders to instantly compare performance trends and seasonal growth[cite: 5, 6].
 
 ---
 
 ## 🛠️ Technical Stack
-* [cite_start]**Data Modeling:** Oracle SQL Developer Data Modeler for the design of both Logical and Relational entity-relationship diagrams (ERDs)[cite: 1, 7].
-* [cite_start]**Synthetic Data Generation:** Python 3.x using the **Faker** library[cite: 2, 4].
-* [cite_start]**Advanced Analytics:** Oracle SQL Developer for complex business logic and query optimization[cite: 3].
-* [cite_start]**Business Intelligence:** Power BI Desktop for data visualization[cite: 5, 6].
+* **Data Modeling:** Oracle SQL Developer Data Modeler for the design of both Logical and Relational entity-relationship diagrams (ERDs)
+* **Data Generation:** Python 3.x using the **Faker** library
+* **Advanced Analytics:** Oracle SQL Developer 
+* **Reporting:** Power BI Desktop for data visualization
