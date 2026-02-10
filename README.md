@@ -3,10 +3,12 @@
 This project is a hands-on demonstration of the full data lifecycle, bridging the gap between raw database architecture and strategic business decision-making. I designed and populated a simulated e-commerce database from scratch, using that data to extract key business metrics and build an interactive performance report.
 
 ## 📁 Project Structure
+
+```text
 .
 ├── database/
 │   ├── Eshop_structure.sql          # Primary DDL script (Tables, Constraints)
-│   ├── Eshop_structure_full.sql     # Example of fi
+│   ├── Eshop_structure_full.sql     # Combined structure and generated data
 │   └── EshopRelationalDia.png       # Relational Diagram (ERD) export
 ├── scripts/
 │   ├── PoupulateScript.py           # Python ETL engine using Faker
@@ -17,6 +19,7 @@ This project is a hands-on demonstration of the full data lifecycle, bridging th
 │   ├── ReportPowerBi.png            # Dashboard screenshot for README
 │   └── InteractiveReport.pbix       # Source Power BI file
 └── README.md                        # Project documentation
+```
 ---
 
 ## Database Design
