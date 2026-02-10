@@ -1,21 +1,47 @@
-# VirtualEshop-Data-Simulation
-A technical demonstration of an end-to-end e-commerce data pipeline. This project includes relational schema design in Oracle SQL, a Python-based synthetic data generation engine using Faker, advanced SQL business logic, and a validated Power BI reporting layer.
+# VirtualEshopDB: End-to-End Retail Data Architecture
 
-Core Project Phases:
+**VirtualEshopDB** is an end-to-end Data Engineering and Business Intelligence project designed to simulate a high-growth e-commerce environment. The project bridges the gap between raw transactional data and strategic decision-making by implementing a full data pipeline—from relational modeling and automated data synthesis to advanced analytical reporting.
 
-Phase 1: Database Architecture – Designing a normalized Oracle SQL schema with hierarchical category support.
-Phase 2: Data Engineering – Developing a Python-based ETL engine using Faker to populate 16,000+ realistic records.
-Phase 3: Analytical Logic – Create SQL queries for Market Basket Analysis.
-Phase 4: Business Intelligence – Visualizing data through an interactive Power BI dashboard.
+---
 
+## Database Design
+The database is organized into six main sections: a Customer list for personal details, a Category and Product catalog to organize items (like grouping Laptops under Electronics), and the Order and Order_item records that act as the digital receipt for every sale. To keep everything accurate, a live Inventory_log tracks every stock change—whether an item is sold, returned, or restocked. This connected system ensures that every piece of information is perfectly recorded, providing the reliable data needed to create the final business reports and charts.
 
 
 
 
-Technical Stack
-Database Architecture: Oracle SQL (11g/21c) used for the relational schema foundation and constraint management.
-Data Modeling: Oracle SQL Developer Data Modeler for the design of both Logical and Relational entity-relationship diagrams (ERDs).
-Data Engineering: Python 3.x for building custom ETL pipelines and automated data ingestion scripts.
-Synthetic Data Generation: Faker library used to simulate a production-scale environment with over 16,000 records across customers, products, and transactions.
-Advanced Analytics: Oracle SQL Developer for developing complex business logic, including Market Basket Analysis and Customer Lifetime Value (CLV) metrics.
-Business Intelligence: Power BI Desktop for data transformation and the creation of an interactive reporting dashboard.
+
+---
+
+## Data Generation
+The Python script acts as the store's data engine, automatically filling the database with realistic information. Using the Faker library, it generates 1,000 unique Customers, a diverse Product catalog, and 5,000 Orders with a complete Inventory_log.
+
+You can easily adjust the size of the database to simulate a much larger or smaller business by changing the values in the Configuration section of `PoupulateScript.py`:
+
+```python
+# Change these values to scale your data
+num_customers = 1000   # Increase for more users
+num_products = 500     # Increase for a bigger catalog
+num_orders = 5000      # Increase for more sales history
+num_logs = 10000       # Increase for more inventory tracking
+```
+
+## Analytical SQL Logic
+I wrote custom scripts to convert raw data into key business metrics, such as category profitability, customer rankings, and product associations. This process summarizes the data for direct use in the Power
+
+---
+
+## Business Intelligence Dashboard
+[cite_start]The **Power BI Dashboard** is the project's interactive visual layer[cite: 5, 6]. [cite_start]It connects directly to the SQL-processed data to track business health through dynamic charts and KPIs[cite: 5, 6].
+
+
+
+[cite_start]Users can easily filter the entire report by month or year, allowing stakeholders to instantly compare performance trends and seasonal growth[cite: 5, 6].
+
+---
+
+## 🛠️ Technical Stack
+* [cite_start]**Data Modeling:** Oracle SQL Developer Data Modeler for the design of both Logical and Relational entity-relationship diagrams (ERDs)[cite: 1, 7].
+* [cite_start]**Synthetic Data Generation:** Python 3.x using the **Faker** library[cite: 2, 4].
+* [cite_start]**Advanced Analytics:** Oracle SQL Developer for complex business logic and query optimization[cite: 3].
+* [cite_start]**Business Intelligence:** Power BI Desktop for data visualization[cite: 5, 6].
