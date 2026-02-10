@@ -54,7 +54,7 @@ The **Power BI Dashboard** is the project's interactive visual layer.It connects
 
 ![Power BI Report](reports/ReportPowerBi.png)
 
-Users can easily filter the entire report by month or year, allowing stakeholders to instantly compare performance trends and seasonal growth[cite: 5, 6].
+Users can easily filter the entire report by month or year, allowing stakeholders to instantly compare performance trends and seasonal growth.
 
 ---
 
