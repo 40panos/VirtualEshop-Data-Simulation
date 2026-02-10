@@ -1,7 +1,22 @@
-# VirtualEshopDB: End-to-End Retail Data Architecture
+# E-commerce Data Engineering & BI Simulation project
 
-**VirtualEshopDB** is an end-to-end Data Engineering and Business Intelligence project designed to simulate a high-growth e-commerce environment. The project bridges the gap between raw transactional data and strategic decision-making by implementing a full data pipeline—from relational modeling and automated data synthesis to advanced analytical reporting.
+This project is a hands-on demonstration of the full data lifecycle, bridging the gap between raw database architecture and strategic business decision-making. I designed and populated a simulated e-commerce database from scratch, using that data to extract key business metrics and build an interactive performance report.
 
+## 📁 Project Structure
+.
+├── database/
+│   ├── Eshop_structure.sql          # Primary DDL script (Tables, Constraints)
+│   ├── Eshop_structure_full.sql     # Example of fi
+│   └── EshopRelationalDia.png       # Relational Diagram (ERD) export
+├── scripts/
+│   ├── PoupulateScript.py           # Python ETL engine using Faker
+│   └── requirements.txt             # Python dependencies (faker, cx_Oracle)
+├── sql_analysis/
+│   └── VirtEshopDB~1.sql            # Advanced queries (Market Basket, CLV, etc.)
+├── reports/
+│   ├── ReportPowerBi.png            # Dashboard screenshot for README
+│   └── InteractiveReport.pbix       # Source Power BI file
+└── README.md                        # Project documentation
 ---
 
 ## Database Design
@@ -27,14 +42,14 @@ num_logs = 10000       # Increase for more inventory tracking
 ```
 
 ## Analytical SQL Logic
-I wrote custom scripts to convert raw data into key business metrics, such as category profitability, customer rankings, and product associations. This process summarizes the data for direct use in the Power
+I wrote custom scripts to convert raw data into key business metrics, such as category profitability, customer rankings, and product associations. This process summarizes the data for direct use in the Power Bi
 
 ---
 
 ## Business Intelligence Dashboard
 The **Power BI Dashboard** is the project's interactive visual layer.It connects directly to the SQL-processed data to track business health through dynamic charts and KPIs
 
-![Database Design](reports/ReportPowerBi.png)
+![Power BI Report](reports/ReportPowerBi.png)
 
 Users can easily filter the entire report by month or year, allowing stakeholders to instantly compare performance trends and seasonal growth[cite: 5, 6].
 
